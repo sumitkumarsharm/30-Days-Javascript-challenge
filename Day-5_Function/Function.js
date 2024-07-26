@@ -97,3 +97,4 @@ function greeting(helloMessage, name) {
 // Pass `sayHello` as an argument to `greeting` function
 greeting(sayHello, 9135862748);
 // Hello, JavaScript!
+console.log('hello');
