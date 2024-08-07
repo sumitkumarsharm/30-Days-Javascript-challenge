@@ -86,15 +86,18 @@ const sum = (Name, age = 25) => {
 console.log(sum("Ahmed")); // Expected output: Hello Mr Ahmed you are 25 years old
 console.log(sum("Amit", 30)); // Expected output: Hello Mr Ahmed you are
 
-// Activity - 5 Heigher order function
 
-function sayHello() {
-  return "My number is : ";
+// Activity - 5 Heigher order function
+// Task - 9 Write a heigher order function that takes a function and a number and call the function many time.
+
+function repeat(func, n) {
+  for (let i = 0; i < n; i++) {
+    func();
+  }
 }
-function greeting(helloMessage, name) {
-  console.log(helloMessage() + name);
-}
-// Pass `sayHello` as an argument to `greeting` function
-greeting(sayHello, 9135862748);
-// Hello, JavaScript!
-console.log('hello');
+const sayHello = () => {
+  console.log("Hello");
+  };
+  repeat(sayHello, 5); // Expected output: Hello Hello Hello Hello Hello
+
+  // Task - 10 Write the heigher order function that takes two function and a value and apply the first function to the value and aply the second function to the result
